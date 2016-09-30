@@ -17,8 +17,7 @@ public class Lesson_02
 		
 		System.out.println(name);
 		System.out.println(address);
-		System.out.println(city);
-		System.out.println(zip);
+		System.out.println(city + " " + zip);
 		
 		//Complex Calculation
 		int l = 3;
