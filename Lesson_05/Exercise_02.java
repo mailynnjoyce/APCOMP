@@ -11,6 +11,7 @@ public class Exercise_02
 	static String item4;
 	static double price4;
 	static double discount;
+	static String output;
 	
 	public static void main(String[]args)
 	{
@@ -35,12 +36,12 @@ public class Exercise_02
 		System.out.println("Please enter the price:");
 		price4 = kb.nextDouble();
 		
+		output = "";
 		format();
 	}
 	
 	public static String format()
 	{
-		String output = "";
 		output +=System.out.println("<<<<<__Receipt__>>>>>");
 		output += String.format("\n%11s  %5.2f", item1, price1);
 		output += String.format("\n%11s  %5.2f", item1, price1);

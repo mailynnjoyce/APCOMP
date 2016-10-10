@@ -28,25 +28,6 @@ public class lesson_03
 		System.out.println("What do you want to be when you're older, " + name + "? ");
 		String job = keyboard.nextLine();
 		System.out.println(job + "? Good luck with that! I think you need to be smarter for that.");
-		
-		System.out.println("");
-		System.out.println("");
-		System.out.println("BMI CALCULATOR");
-		System.out.println("What is your height(in inches)? ");
-		int height = keyboard.nextInt();
-		System.out.println("What is your weight(in pounds)? ");
-		int weight = keyboard.nextInt();
-		double bmi = 703*weight/height/height;
-		System.out.println("Your BMI is "+ bmi + ".");
-		
-		System.out.println("");
-		System.out.println("");
-		System.out.println("AREA CALCULATOR");
-		System.out.println("What is the length? ");
-		int l = keyboard.nextInt();
-		System.out.println("What is the width? ");
-		int w = keyboard.nextInt();
-		int area = l*w;
-		System.out.println("The area is "+ area + ".");
+
 	}
 }
