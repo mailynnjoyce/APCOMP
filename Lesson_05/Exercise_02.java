@@ -35,14 +35,23 @@ public class Exercise_02
 		item4 = kb.nextLine();
 		System.out.println("Please enter the price:");
 		price4 = kb.nextDouble();
-		
-		output = "";
 		format();
+		System.out.println(output);
+	}
+	
+	public static double discount()
+	{
+		if ((price1+price2+price3+price4)>=2000)
+		{
+			return (price1+price2+price3+price4)*0.15;
+		}
+		return 0.0;
 	}
 	
 	public static String format()
 	{
-		output +=System.out.println("<<<<<__Receipt__>>>>>");
+		output = "";
+		output += "<<<<<__Receipt__>>>>>";
 		output += String.format("\n%11s  %5.2f", item1, price1);
 		output += String.format("\n%11s  %5.2f", item1, price1);
 		output += String.format("\n%11s  %5.2f", item2, price2);
@@ -51,18 +60,8 @@ public class Exercise_02
 		output += String.format("\n%11s  %5.2f", "Total:", (price1+price2+price3+price4));
 		output += String.format("\n%11s  %5.2f", "Tax:", (price1+price2+price3+price4)*0.075);
 		output += String.format("\n%11s  %5.2f", "Subtotal:", ((price1+price2+price3+price4)+(price1+price2+price3)*0.075)-discount());
-		output +=System.out.println("_______________________");
+		output += "\n______________________";
 		return output;
 	}
-	public static double discount()
-	{
-		if ((price1+price2+price3+price4)>=2000)
-		{
-			return (price1+price2+price3+price4)*0.15;
-		}
-		else if ((price1+price2+price3+price4)<2000)
-		{
-			return 0.0;
-		}
-	}
+
 }
