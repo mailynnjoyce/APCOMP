@@ -23,10 +23,9 @@ public class Average
 
 	}
 	
-	public static int calcAverage()
+	public static void calcAverage()
 	{
 		a=(one+two+three)/3;
-		return a;
 	}
 
 	public static void print()

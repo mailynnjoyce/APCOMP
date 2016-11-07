@@ -17,10 +17,9 @@ public class Circle
 
 	}
 	
-	public static double calcArea()
+	public static void calcArea()
 	{
 		area=(one*one)*3.14159265;
-		return area;
 	}
 
 	public static void print()

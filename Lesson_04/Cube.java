@@ -17,10 +17,9 @@ public class Cube
 
 	}
 	
-	public static int calcSurf()
+	public static void calcSurf()
 	{
 		surf=(one*one)*6;
-		return surf;
 	}
 
 	public static void print()

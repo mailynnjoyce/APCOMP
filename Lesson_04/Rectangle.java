@@ -20,10 +20,9 @@ public class Rectangle
 
 	}
 	
-	public static int calcPerim()
+	public static void calcPerim()
 	{
 		p=(2*one)+(2*two);
-		return p;
 	}
 
 	public static void print()
