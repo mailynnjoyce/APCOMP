@@ -5,6 +5,7 @@ public class Average
 	static int one;
 	static int two;
 	static int three;
+	static int a;
 	
 	public static void main(String[]args)
 	{
@@ -24,11 +25,12 @@ public class Average
 	
 	public static int calcAverage()
 	{
-		return (one+two+three)/3;
+		a=(one+two+three)/3;
+		return a;
 	}
 
 	public static void print()
 	{
-		System.out.println("The average of "+ one + ", " + two + ", and " + three + " is "+ calcAverage());
+		System.out.println("The average of "+ one + ", " + two + ", and " + three + " is "+ a);
 	}
 }

@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Cube
 {
 	static int one;
+	static int surf;
 	
 	public static void main(String[]args)
 	{
@@ -18,11 +19,12 @@ public class Cube
 	
 	public static int calcSurf()
 	{
-		return (one*one)*6;
+		surf=(one*one)*6;
+		return surf;
 	}
 
 	public static void print()
 	{
-		System.out.println("The surface area of the cube is "+ calcSurf());
+		System.out.println("The surface area of the cube is "+ surf);
 	}
 }

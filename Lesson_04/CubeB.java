@@ -9,8 +9,17 @@ public class CubeB
 		System.out.println("Enter the side length:");
 		int one = kb.nextInt();
 		
-		System.out.println("The surface area of the cube is "+ ((one*one)*6));
+		print(calcSurf(one));
 
 	}
+	
+	public static int calcSurf(int one)
+	{
+		return (one*one)*6;
+	}
 
+	public static void print(int surf)
+	{
+		System.out.println("The surface area of the cube is "+ surf);
+	}
 }

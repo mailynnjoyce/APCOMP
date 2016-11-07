@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Circle
 {
 	static double one;
+	static double area;
 	
 	public static void main(String[]args)
 	{
@@ -18,11 +19,12 @@ public class Circle
 	
 	public static double calcArea()
 	{
-		return (one*one)*3.14159265;
+		area=(one*one)*3.14159265;
+		return area;
 	}
 
 	public static void print()
 	{
-		System.out.printf("The area of the circle is %7.2f\n", calcArea());
+		System.out.printf("The area of the circle is %7.2f\n", area);
 	}
 }

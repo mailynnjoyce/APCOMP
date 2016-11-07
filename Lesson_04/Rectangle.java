@@ -4,6 +4,7 @@ public class Rectangle
 {
 	static int one;
 	static int two;
+	static int p;
 	
 	public static void main(String[]args)
 	{
@@ -21,11 +22,12 @@ public class Rectangle
 	
 	public static int calcPerim()
 	{
-		return (2*one)+(2*two);
+		p=(2*one)+(2*two);
+		return p;
 	}
 
 	public static void print()
 	{
-		System.out.println("The perimeter is " + calcPerim());
+		System.out.println("The perimeter is " + p);
 	}
 }

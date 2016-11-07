@@ -11,8 +11,17 @@ public class RectangleB
 		System.out.println("Enter width");
 		int two = kb.nextInt();
 		
-		System.out.println("The perimeter is " + ((2*one)+(2*two)));
+		print(calcPerim(one,two));
 
 	}
 	
+	public static int calcPerim(int one, int two)
+	{
+		return (2*one)+(2*two);
+	}
+
+	public static void print(int p)
+	{
+		System.out.println("The perimeter is " + p);
+	}
 }
