@@ -6,18 +6,25 @@ public class TreeDeg60
 	{
 	   Scanner kb = new Scanner(System.in);
 	   System.out.println("Please enter a word: ");
-	   String word = kb.next();
+	   String n = kb.next();
+	   
 	   int start = 0;
-	   int stop = word.length();
-	   recur(word, start, stop);
+	   int stop = n.length();
+	   int numSpace = stop;
+	   String space = " ";
+	   
+	   recur(n, start, stop, numSpace, space);
 	}
-	public static void recur(String n, int start, int stop)
+	
+	public static void recur(String n, int start, int stop, int numSpace, String space)
 	{
 	   if (start <= stop)
 	   {
-		   System.out.println(n.substring(0,start));
-		   start +=1;
-		   recur(n, start, stop);
+		   String multiSpace = new String(new char[numSpace+1]).replace("\0", space);
+		   System.out.println(multiSpace + n.substring(0,start));
+		   start += 1;
+		   numSpace -= 1;
+		   recur(n, start, stop, numSpace, space);
 	   }
 	}
 }
