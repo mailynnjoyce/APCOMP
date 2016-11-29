@@ -8,9 +8,9 @@ public class Exercise_01
 	public static void main(String[]args)
 	{
 		Random rand = new Random();
-		player = rand.nextInt(6)+1;
+		player = rand.nextInt(6);
 		System.out.println("You rolled a " + player);
-		comp = rand.nextInt(6)+1;
+		comp = rand.nextInt(6);
 		System.out.println("The computer rolled a " + comp);
 		
 		if (player > comp)
