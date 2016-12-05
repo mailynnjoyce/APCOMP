@@ -25,7 +25,7 @@ public class ExpressionSolver
 				{
 					x.set(i, "" + (Integer.parseInt(x.get(i-1)) * Integer.parseInt(x.get(i+1))));
 				}
-				if (x.get(i).equals("/"))
+				else
 				{
 					x.set(i, "" + (Integer.parseInt(x.get(i-1)) / Integer.parseInt(x.get(i+1))));
 				}
@@ -37,6 +37,9 @@ public class ExpressionSolver
 				i++;
 			}
 		}
+		
+		i = 0;
+		
 		while (i < x.size())
 		{
 			if (x.get(i).equals("+") || x.get(i).equals("-"))
@@ -45,7 +48,7 @@ public class ExpressionSolver
 				{
 					x.set(i, "" + (Integer.parseInt(x.get(i-1)) + Integer.parseInt(x.get(i+1))));
 				}
-				if (x.get(i).equals("-"))
+				else
 				{
 					x.set(i, "" + (Integer.parseInt(x.get(i-1)) - Integer.parseInt(x.get(i+1))));
 				}
