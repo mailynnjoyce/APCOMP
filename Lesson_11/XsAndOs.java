@@ -9,20 +9,20 @@ public class XsAndOs
 	   
 	   for (int i = 0; i < xAndO.length; i++)
 	   {
-		   for (int j = 0; j < xAndO.length; j++)
+		   for (int j = 0; j < xAndO[i].length; j++)
 		   {
-			   int pick = rand.nextInt(3);
+			   int pick = rand.nextInt(2);
 			   if (pick == 1)
 			   {
 				   xAndO[i][j] = "x";
 			   }
-			   if (pick == 2)
+			   else
 			   {
 				   xAndO[i][j] = "o";
 			   }
-			   System.out.println(xAndO[i][j] + "\t");
+			   System.out.print(xAndO[i][j] + "\t");
 		   }
-		   System.out.println("");
+		   System.out.println();
 	   }
 	}
 }

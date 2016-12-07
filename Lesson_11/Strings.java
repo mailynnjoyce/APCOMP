@@ -9,7 +9,7 @@ public class Strings
 	   
 	   for (int i = 0; i < words.length; i++)
 	   {
-		   for (int j = 0; j < words.length; j++)
+		   for (int j = 0; j < words[i].length; j++)
 		   {
 			   System.out.println("Please enter a word: ");
 			   words[i][j] = kb.next();
@@ -18,12 +18,12 @@ public class Strings
 	   
 	   for (int i = 0; i < words.length; i++)
 	   {
-		   for (int j = 0; j < words.length; j++)
+		   for (int j = 0; j < words[i].length; j++)
 		   {
-			   System.out.println(words[i][j]);
+			   System.out.print(words[i][j] + "\t");
 		   }
 		   
-		   System.out.println("");
+		   System.out.println();
 	   }
 	}
 }
