@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.io.*;
 
 public class FindTheZs
 {
@@ -23,13 +24,14 @@ public class FindTheZs
 		String z = "";
 		for (int i = 0; i < x.length; i++) 
 		{
-			if (x[i].indexOf("z")>0)
+			if (x[i].indexOf('z')+1 > 0)
 			{	
 				z += x[i] + " ";
 			}
-		 }
-		 return z;
+		}
+		return z;
 	}
+	
 	public static String printArray (String[] x)
 	{
 		String words = "";
@@ -41,7 +43,8 @@ public class FindTheZs
 			}
 			
 			words += x[i];
-		 }
-		 return words;
+		}
+		
+		return words;
 	}
 }
