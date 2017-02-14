@@ -1,4 +1,4 @@
-abstract public class Toy{
+public abstract class Toy{
 	
 	private String name;
 	private int count;
@@ -40,11 +40,17 @@ abstract public class Toy{
 		
 	}
 	
-	abstract public String getType();
+	abstract String getType();
 	
 	public String toString(){
 		
 		return name + " - " + count;
+		
+	}
+	
+	public void addCount(){
+		
+		count += 1;
 		
 	}
 }

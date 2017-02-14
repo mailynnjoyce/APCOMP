@@ -1,13 +1,15 @@
-public class ToyRunner
+public class ToyRunnner
 {
 	public static void main(String[]args)
 	{
-		Afigure object = new Afirgure("Deadpool");
+		AFigure object = new AFigure("Deadpool");
 		
-		public String toString()
+		Car object2 = new Car("BMW");
 		
-		Car object = new Car("BMW");
+		ToyStore store = new ToyStore("Hotwheel, Car, G.I.Joe, AF, PennyRacer, Car, Matchbox, Car, Star Wars, AF, Pullback, Car, Star Wars, AF");
 		
-		public String toString()
+		System.out.println(store.toString());
+		System.out.println("Most Frequent Toy:             " + store.getMostFrequentToy());
+		System.out.println("Most Frequent Type of Toy:     " + store.getMostFrequentType());
 	}
 }
