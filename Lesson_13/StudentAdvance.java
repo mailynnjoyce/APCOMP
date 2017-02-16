@@ -1,4 +1,5 @@
-public class StudentAdvance extends Advance{
+public class StudentAdvance extends Advance
+{
 	public StudentAdvance(){
 		super();
 	}

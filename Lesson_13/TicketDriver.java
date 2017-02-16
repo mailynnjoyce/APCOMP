@@ -7,8 +7,8 @@ public class TicketDriver
 		Advance thing2 = new Advance();
 		StudentAdvance thing3 = new StudentAdvance();
 		
-		System.out.println(thing + "\n");
-		System.out.println(thing2 + "\n");
-		System.out.println(thing3 + "\n");
+		System.out.println(thing.toString() + "\n");
+		System.out.println(thing2.toString() + "\n");
+		System.out.println(thing3.toString() + "\n");
 	}
 }
