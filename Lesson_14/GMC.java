@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class GMC implements Location
+public class GMC extends Car
 {
 	private double x,y;
 	private int ID;
@@ -19,18 +19,6 @@ public class GMC implements Location
 		y = y1;
 	}
 	
-	public GMC(String coordinates)
-	{
-		String[] parts = coordinates.split(",");
-		x = Double.parseDouble(parts[0]);
-		y = Double.parseDouble(parts[1]);
-	}
-	
-	public GMC(double[] coordinates)
-	{
-		x = coordinates[0];
-		y = coordinates[1];
-	}
 	
 	public int getID()
 	{
