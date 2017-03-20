@@ -92,4 +92,5 @@ abstract class Car2 implements Location2
 	{
 		return (int)(Math.random() * (Math.pow(10, 6) - 1) + 1);
 	}
+	
 }

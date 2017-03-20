@@ -33,6 +33,7 @@ public class Toyota2 extends Car2
 	
 	public double[] getLoc()
 	{
-		return (new double[]{x,y});
+		double[] loc = {x,y};
+		return loc;
 	}
 }
