@@ -1,84 +1,88 @@
-/**
- * This class contains class (static) methods
- * that will help you test the Picture class 
- * methods.  Uncomment the methods and the code
- * in the main to test.
- * 
- * @author Barbara Ericson 
- */
 public class PictureTester
 {
-  /** Method to test zeroBlue */
   public static void testZeroBlue()
   {
-    Picture beach = new Picture("beach.jpg");
-    beach.explore();
-    beach.zeroBlue();
-    beach.explore();
+    Picture jenny = new Picture("jenny-red.jpg");
+    jenny.zeroBlue();
+    jenny.explore();
   }
   
-  /** Method to test mirrorVertical */
-  public static void testMirrorVertical()
+  public static void testMirrorH()
   {
-    Picture caterpillar = new Picture("caterpillar.jpg");
-    caterpillar.explore();
-    caterpillar.mirrorVertical();
-    caterpillar.explore();
+    Picture jenny = new Picture("jenny-red.jpg");
+    jenny.mirrorH();
+    jenny.explore();
   }
   
-  /** Method to test mirrorTemple */
-  public static void testMirrorTemple()
+  public static void testMirrorV()
   {
-    Picture temple = new Picture("temple.jpg");
-    temple.explore();
-    temple.mirrorTemple();
-    temple.explore();
+    Picture jenny = new Picture("jenny-red.jpg");
+    jenny.mirrorV();
+    jenny.explore();
   }
   
-  /** Method to test the collage method */
+  public static void testMirrorD()
+  {
+    Picture jenny = new Picture("jenny-red.jpg");
+    jenny.mirrorD();
+    jenny.explore();
+  }
+  
   public static void testCollage()
   {
     Picture canvas = new Picture("640x480.jpg");
     canvas.createCollage();
     canvas.explore();
   }
-  
-  /** Method to test edgeDetection */
+ 
   public static void testEdgeDetection()
   {
-    Picture swan = new Picture("swan.jpg");
-    swan.edgeDetection(10);
-    swan.explore();
+    Picture jenny = new Picture("jenny-red.jpg");
+    jenny.edgeDetection(10);
+    jenny.explore();
   }
   
-  /** Main method for testing.  Every class can have a main
-    * method in Java */
+  public static void testKeepOnlyBlue()
+  {
+    Picture jenny = new Picture("jenny-red.jpg");
+    jenny.keepOnlyBlue();
+    jenny.explore();
+  }
+  
+  public static void testNegate()
+  {
+    Picture jenny = new Picture("jenny-red.jpg");
+    jenny.negate();
+    jenny.explore();
+  }
+  
+  public static void testGrayscale()
+  {
+    Picture jenny = new Picture("jenny-red.jpg");
+    jenny.grayscale();
+    jenny.explore();
+  }
+  
+  public static void testFixUnderwater()
+  {
+    Picture f = new Picture("water.jpg");
+    f.FixUnderwater();
+    f.explore();
+  }
+  
   public static void main(String[] args)
   {
-    // uncomment a call here to run a test
-    // and comment out the ones you don't want
-    // to run
     testZeroBlue();
-    //testKeepOnlyBlue();
-    //testKeepOnlyRed();
-    //testKeepOnlyGreen();
-    //testNegate();
-    //testGrayscale();
-    //testFixUnderwater();
-    //testMirrorVertical();
-    //testMirrorTemple();
-    //testMirrorArms();
-    //testMirrorGull();
-    //testMirrorDiagonal();
-    //testCollage();
-    //testCopy();
-    //testEdgeDetection();
-    //testEdgeDetection2();
-    //testChromakey();
-    //testEncodeAndDecode();
-    //testGetCountRedOverValue(250);
-    //testSetRedToHalfValueInTopHalf();
-    //testClearBlueOverValue(200);
-    //testGetAverageForColumn(0);
+    testKeepOnlyBlue();
+    testNegate();
+    testGrayscale();
+    testMirrorH();
+	testMirrorV();
+	testMirrorD();
+    testEdgeDetection();
+	Picture jenny = new Picture("jenny-red.jpg");
+    jenny.explore();
+	testCollage();
+	testFixUnderwater();
   }
 }
