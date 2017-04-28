@@ -92,22 +92,29 @@ public class Picture extends SimplePicture
   
   public void mirrorD()
   {
-    Pixel[][] pixs = this.getPixels2D();
-    Pixel topPix = null;
-    Pixel botPix = null;
-    int width = pixs[0].length;
-    for (int row = 0; row < pixs.length; row++)
-    {
-      for (int col = 0; col < width; col++)
-      {
-        if(col < width)
+	Pixel[][] pixs = this.getPixels2D();
+	Pixel topPix = null;
+	Pixel botPix = null;
+	int max;
+	
+	if(pixs.length < pixs[0].length)
+	{
+		max = pixs.length; 
+	}
+	else
+	{
+		max = pixs[0].length;
+	}
+
+	for (int row = 0; row < max; row++)
+	{
+		for (int col = row; col < max; col++)
 		{
-			topPix = pixs[row][col];
-			botPix = pixs[col][row];
-			topPix.setColor(botPix.getColor());
+		  topPix = pixs[row][col];
+		  botPix = pixs[col][row];
+		  botPix.setColor(topPix.getColor());
 		}
-      }
-    } 
+	}
   }
   
   public void copy(Picture fromPic, int startRow, int startCol)
