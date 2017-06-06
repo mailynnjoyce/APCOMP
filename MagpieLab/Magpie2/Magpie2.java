@@ -60,11 +60,6 @@ public class Magpie2
 		{
 			response = "Professor Handsome?";
 		}
-
-		else if (findKeyword(statement, "love") >= 0)
-		{
-			response = "Ew, love. You know what I loooovvvveeee? I'm joking I don't love. I hate.";
-		}
 		
 		else if (findKeyword(statement, "i want", 0) >= 0)
 		{
